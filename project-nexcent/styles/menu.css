@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 1em;
+    font-family: Inter Medium;
+    font-weight: lighter;
+}
+
+.header__menu {
+    display: block;
+}
+
+.header__menu_burguer {
+    background-color: transparent;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+.header__menu_itens {
+    display: none;
+    text-align: end;
+    position: absolute;
+    top: 3.5em;
+    right: 0.9em;
+}
+
+.header__menu_itens.ativo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem
+}
+
+.header__menu--item {
+    text-decoration: none;
+    color: var(--cinza-escuro);
+    margin-bottom: 2rem;
+}
+
+.header__menu--button {
+    background-color: var(--cor-primaria);
+    padding: 0.4rem 1.2rem;
+    color: var(--branco)
+}
+
+
