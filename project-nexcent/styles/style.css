@@ -1,6 +1,11 @@
 @import url(menu.css);
 
 @font-face {
+    font-family: Inter Regular;
+    src: url(/fonts/Inter-Regular.otf);
+}
+
+@font-face {
     font-family: Inter Medium;
     src: url(/fonts/Inter-Medium.otf);
 }
@@ -20,5 +25,5 @@
 
 * {
     font-size: 1rem;
-    font-family: Inter Medium;
+    font-family: Inter Regular;
 }

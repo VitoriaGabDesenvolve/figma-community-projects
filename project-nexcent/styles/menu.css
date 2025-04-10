@@ -2,27 +2,34 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1em 1em;
-    font-family: Inter Medium;
+    margin: 0.1em 1em;
+    height: 5em;
+    font-family: Inter Regular;
     font-weight: lighter;
+    font-size: 0.8rem;
 }
 
 .header__menu {
-    display: block;
+    display: inline-block;
+    align-items: center;
+    height: 100%;  
 }
 
 .header__menu_burguer {
     background-color: transparent;
-    border: 1px solid transparent;
+    border: none;
     width: 100%;
+    border: 1px solid red;
+    align-items: center;
+    margin-top: 1em;
 }
 
 .header__menu_itens {
     display: none;
     text-align: end;
     position: absolute;
-    top: 3.5em;
-    right: 0.9em;
+    top: 5em;
+    right: 1.3rem;
 }
 
 .header__menu_itens.ativo {
@@ -39,8 +46,49 @@ header {
 
 .header__menu--button {
     background-color: var(--cor-primaria);
-    padding: 0.4rem 1.2rem;
-    color: var(--branco)
+    padding: 0.4rem 0.3rem;
+    width: 100%;
+    color: var(--branco);
+    border-radius: 2px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.header__menu--icon-seta {
+    width: 1.2rem;
+    margin-left: 20%;
+}
 
+@media screen and (min-width: 700px) {
+
+    .header__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .header__menu_itens {
+        position: static;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: flex-end;
+        width: 95%;
+      }
+
+    .header__menu--item {
+        text-decoration: none;
+        color: var(--cinza-escuro);
+        margin-bottom: 0;
+        display: flex;
+
+    }
+
+    .header__menu_burguer {
+        display: none;
+    }
+}
