@@ -1,0 +1,55 @@
+.slider {
+    background-color: var(--prata);
+    display: flex;
+    gap: 30vw;
+}
+
+.fonte_verde {
+    color: var(--cor-primaria)
+}
+
+.slide__info {
+    display: flex;
+    flex-direction: column;
+    color: var(--cinza-escuro);
+    padding: 6% 2%;
+    gap: 0.5em;
+}
+
+.slide__info--titulo {
+    font-family: Inter Medium;
+    font-size: 1.2rem;
+
+}
+
+.slide__info--paragrafo {
+    font-family: Inter Regular;
+    font-size: 0.5rem;
+    color: var(--cinza-claro)
+}
+
+.slide__info--button {
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    text-decoration: none;
+    width: 20%;
+    padding: 1% 0;
+    font-size: 0.7rem;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.slide__imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide__imagem img {
+    width: 50%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--cor-primaria);
+}

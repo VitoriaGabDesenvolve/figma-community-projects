@@ -4,26 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/styles/style.css">
     <title>Nexcenter</title>
 </head>
 <body>
     <header>
         <div class="header__logo">
-            <img src="/img/Logo.svg" alt="">
+            <img src="/img/Logo.svg" alt="Logo Nexcent">
         </div>
         <div class="header__menu">
             <button type="menu" class="header__menu_burguer" onclick="clickMenu()"><img src="/img/icons/Burger.svg" alt="icone clicável para visualizar o menu" ></button>
             <ul class="header__menu_itens">
-                <li><a href="#" class="header__menu--item">Home</a></li>
+                <li><a href="#" class="header__menu--item header__menu--item-first">Home</a></li>
                 <li><a href="#" class="header__menu--item">Features</a></li>
                 <li><a href="#" class="header__menu--item">Community</a></li>
                 <li><a href="#" class="header__menu--item">Blog</a></li>
                 <li><a href="#" class="header__menu--item">Pricing</a></li> 
-                <li><a href="#" class="header__menu--button">Register now</a></li>
+                <li>
+                    <a href="#" class="header__menu--button">Register Now 
+                        <span><img src="/img/icons/Right.svg" alt="seta para direita" class="header__menu--icon-seta"></span>
+                    </a>
+                </li>
             </ul>
-        </div>    
+        </div>
     </header>
-    <script src="/js/main.js"></script>
+
+    <section class="slider swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <div class="slide__info">
+                    <h1 class="slide__info--titulo">
+                        Lessons and insights <span class="fonte_verde">from 8 years</span> 
+                    </h1>
+                    <p class="slide__info--paragrafo">Where to grow your business as a photographer: site or social media?</p>
+                    <a href="#" class="slide__info--button">Register</a>
+                </div>
+                <div class="slide__imagem">
+                    <img src="/img/imagem_slide_1.svg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="slide__info">
+                    <h1 class="slide__info--titulo">
+                        Lessons and insights <span class="fonte_verde">from 8 years</span> 
+                    </h1>
+                    <p class="slide__info--paragrafo">Where to grow your business as a photographer: site or social media?</p>
+                    <a href="#" class="slide__info--button">Register</a>
+                </div>
+                <div class="slide__imagem">
+                    <img src="/img/imagem_slide_1.svg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="slide__info">
+                    <h1 class="slide__info--titulo">
+                        Lessons and insights <span class="fonte_verde">from 8 years</span> 
+                    </h1>
+                    <p class="slide__info--paragrafo">Where to grow your business as a photographer: site or social media?</p>
+                    <a href="#" class="slide__info--button">Register</a>
+                </div>
+                <div class="slide__imagem">
+                    <img src="/img/imagem_slide_1.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>
